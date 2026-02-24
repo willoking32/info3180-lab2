@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+
+{% block main %}
+    <div class ="pfbox">
+        <img class ="pfimage" src="{{ url_for('static',filename= 'flat800x800075f.png') }}" alt="profile image"/>
+        <h2>
+            {{ fullname }}
+        </h2>
+
+    </div>
+{% endblock %}

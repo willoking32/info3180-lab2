@@ -17,6 +17,11 @@ def about():
     """Render the website's about page."""
     return render_template('about.html', name="Mary Jane")
 
+@app.route('/profile')
+def profile():
+    return render_template('profile.html',fullname="William Whitelocke")
+
+
 
 ###
 # The functions below should be applicable to all Flask apps.
