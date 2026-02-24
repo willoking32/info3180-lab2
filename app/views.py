@@ -1,5 +1,6 @@
 from app import app
 from flask import render_template, request, redirect, url_for, flash
+import datetime
 
 
 ###
@@ -19,8 +20,14 @@ def about():
 
 @app.route('/profile')
 def profile():
-    return render_template('profile.html',fullname="William Whitelocke")
+    return render_template('profile.html',fullname = "William Whitelocke",
+                            datej=format_date_joined(datetime.date(2019, 2, 7)))
 
+
+def format_date_joined(date):
+    fulldt =date.strftime("%c").split()
+    joined = f'{fulldt[1]}, {fulldt[2]}'
+    return joined
 
 
 ###
