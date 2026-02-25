@@ -6,4 +6,29 @@ body {
     width:250px;
     height: 250px;
     border-radius: 50%;
+    
+}
+
+.pfbox{
+    display: grid;
+    width: 500px;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.toplane{
+    background-color: aquamarine;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 1rem;
+    
+}
+
+.botlane{
+    background-color: aliceblue;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }

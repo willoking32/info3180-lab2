@@ -20,13 +20,14 @@ def about():
 
 @app.route('/profile')
 def profile():
-    return render_template('profile.html',fullname = "William Whitelocke",
+    return render_template('profile.html',fullname = "William Whitelocke",username= "willoking32",
                             datej=format_date_joined(datetime.date(2019, 2, 7)))
 
 
 def format_date_joined(date):
-    fulldt =date.strftime("%c").split()
-    joined = f'{fulldt[1]}, {fulldt[2]}'
+    fulldt =date.strftime("%B, %Y")
+    #joined = f'{fulldt[1]}, {fulldt[4]}'
+    joined = fulldt
     return joined
 
 
