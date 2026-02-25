@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Titan+One&display=swap');
+
+:root{
+  --black: #1a202c;
+  --lightGrey: #edf2f7;
+  --grey: #cbd5e0;
+  --coral: #E57996;
+  --lighterBlue: #32ABE1;
+  --lightBlue: #3182ce;
+  --green: #42B883;
+  --defaultFontFamily: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
 body {
     padding-top: 5rem;
 }
@@ -13,13 +26,15 @@ body {
     display: grid;
     width: 500px;
     margin: 10px;
-    align-items: center;
-    text-align: center;
     border-radius: 20px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .toplane{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
     background-color: aquamarine;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -31,4 +46,38 @@ body {
     background-color: aliceblue;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    padding: 1rem;
+}
+
+
+#cter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#history{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    column-gap: 5px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#follow{
+    color:black;
+    background-color: azure;
+    border: 1px solid;
+    border-radius: .25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    height: 40px;
+    width: 100px;
+
+}
+
+.shaded{
+    color: #646464;
 }
